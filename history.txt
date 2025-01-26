@@ -1,0 +1,22 @@
+  431  cd git_new_repository/
+  432  git clone git@github.com:maksym-poliakov/new_repository.git
+  433  ls -al
+  434  cd new_repository/
+  435  git checkout -b feature
+  436  ls -al
+  437  vim .gitignore
+  438  touch README.md
+  439  git add README.md .gitignore 
+  440  git status
+  441  git commit -m 'add 2 file README.md and .gitignore'
+  442  git push -u origin feature
+  443  git --amend
+  444  git commit --amend
+  445  git push --force
+  446  git checkout main
+  447  git status
+  448  git merge feature
+  449  git push origin main
+  450  history
+  451  hiatory | tail -n 20 > history.txt
+  452  history | tail -n 22 > history.txt
